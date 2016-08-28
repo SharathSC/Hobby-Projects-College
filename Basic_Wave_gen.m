@@ -1,0 +1,11 @@
+[time,output,Fs]=Line_Encoder([1 1 0 1 1 0 0 0 1 0 0],2e6,3,'Manchester');
+plotHandle=plot(time,output);
+xlabel('Time');
+ylabel('Amplitude');
+title('Manchester Encoder');
+set(plotHandle,'LineWidth',2.5);
+grid on;
+maxTime=max(time);
+maxAmp=max(output);
+minAmp=min(output);
+axis([0,maxTime,minAmp-1,maxAmp+1]);
