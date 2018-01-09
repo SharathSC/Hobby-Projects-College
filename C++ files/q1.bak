@@ -1,0 +1,31 @@
+#include<iostream.h>
+#include<string.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<ctype.h>
+void main()
+{
+char ch;
+char k;
+while(1)
+{
+cout<<"please input the charecter which you want to check about\n";
+cin>>ch;
+if(isalpha(ch))
+{cout<<"it is an alphabet";}
+else if(isdigit(ch))
+{cout<<"\nit is a digit";    }
+else
+{cout<<"\nit is any other charecter\n";}
+
+
+cout<<"\nDo you want to continue(Y or N)\n";
+cin>>k;
+if(k='Y')
+continue;
+else if(k='N')
+break;
+
+}
+}

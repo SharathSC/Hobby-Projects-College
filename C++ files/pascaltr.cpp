@@ -1,0 +1,17 @@
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+#include<iomanip.h>
+void main()
+{int n=4;
+for (int i=0;i<=4;i++)
+{int term=pow(11,i);
+cout<<setw((n-i)*2);
+while (term>0)
+{int digit=term%10 ;
+cout<<digit<<" ";
+term /=10;
+}
+cout<<'\n';
+}
+}
