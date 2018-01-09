@@ -1,0 +1,73 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+int urbox,boxno,i,j,ti,t;
+long box[20]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20},val[20]={0.01,1,100,500,1000,2000,5000,10000,20000,40000,60000,80000,100000,1200000,1400000,1800000,2000000,2500000,5000000,10000000},value[20];
+int ub=20;
+
+void deletion1()
+{for(i=0;i<ub;i++)
+{value[i]==val[((((i*2)-4)+9)-3)];}
+cout<<"Please enter the no. of the box you want";
+cin>>urbox;
+for(i=0;i<ub;i++)
+{if(urbox==box[i])
+ {t=box[i];
+  box[i]=box[i+1];
+  box[i+1]=t;
+  ti=val[((((i*2)-4)+9)-3)];
+  val[((((i*2)-4)+9)-3)+1]=ti;
+  val[((((i*2)-4)+9)-3)+1]=val[((((i*2)-4)+9)-3)];
+  }ub--;
+cout<<"The Box you have selected is : "<<urbox;
+cout<<"Hence that box Cannot be selected By you during any part of the game \n";
+cout<<"So Take Care!!!\n";
+cout<<"The Boxes which are left are: ";
+for(i=0;i<ub;i++)
+{cout<<box[i]<<endl;
+}
+}
+
+void banker()
+{
+ if(value[i]<50)
+ {bankval=250%(value[i]);
+ }
+ if(value[i]>=50&&value[i]<400)
+ {bankval=150%(value[i]);
+ }
+ if(value[i]>=400&&value[i]<10000)
+ {bankval=100%(value[i]);
+ }
+ if(value[i]>=10000&&value[i]<500000)
+ {bankval=25%(value[i]);
+ }
+cout<<bankval<<'\n';
+}
+
+void game_input()
+{
+deletion1();
+deletion2();
+banker();
+}
+
+void deletion2()
+{cout<<"Please enter the boxes which you want to delete \n";
+cin>>dbox;
+for(i=0;i<20;i++)
+{if(dbox==box[i])
+ {t=box[i];
+  box[i]=box[i+1];
+  box[i+1]=t;
+  ti=value[i];
+  value[i]=value[i+1];
+  value[i+1]=ti;
+  }
+  cout<<"The boxes left are"<<box[i]<<" ";
+  }
+}
+
+
+
+
