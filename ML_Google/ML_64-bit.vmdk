@@ -1,0 +1,43 @@
+# Disk DescriptorFile
+version=1
+encoding="windows-1252"
+CID=611b96b9
+parentCID=ffffffff
+isNativeSnapshot="no"
+createType="twoGbMaxExtentSparse"
+
+# Extent description
+RW 8323072 SPARSE "ML_64-bit-s001.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s002.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s003.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s004.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s005.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s006.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s007.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s008.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s009.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s010.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s011.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s012.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s013.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s014.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s015.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s016.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s017.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s018.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s019.vmdk"
+RW 8323072 SPARSE "ML_64-bit-s020.vmdk"
+RW 1310720 SPARSE "ML_64-bit-s021.vmdk"
+
+# The Disk Data Base 
+#DDB
+
+ddb.adapterType = "lsilogic"
+ddb.geometry.cylinders = "10443"
+ddb.geometry.heads = "255"
+ddb.geometry.sectors = "63"
+ddb.longContentID = "b4e23f9e8cf12a7646eda0b1611b96b9"
+ddb.toolsInstallType = "4"
+ddb.toolsVersion = "10247"
+ddb.uuid = "60 00 C2 9d d2 45 29 d7-e5 69 60 6d 9a f6 e6 a7"
+ddb.virtualHWVersion = "12"
